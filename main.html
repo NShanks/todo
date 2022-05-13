@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js-file.js" defer></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class = top>Title</div>
+
+    <div class = sidebar>
+        <form onsubmit="addItem()">
+            <label for ="title">Task:</label>
+            <input type ="text" id="title" name="title" value="title">
+            <br>
+            <br>
+            <label for ="description">Description:</label>
+            <input type ="text" id="description" name="description" value="description">
+            <br>
+            <br>
+            <label for ="due">Due Date:</label>
+            <input type ="date" id="due" name="due" value="due">
+            <br>
+            <br>
+            <input type="button" value="Add" onclick="addItem()">
+        </form>
+    </div>
+
+    <div id = board></div>
+</body>
+</html>

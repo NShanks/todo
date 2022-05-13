@@ -1,0 +1,36 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr auto;
+    gap: 8px;
+    background-color: #e0e7ff;
+    text-align: center;
+}
+
+.top{
+    grid-column: 1/-1;
+    grid-row: 0/-1;
+    padding: 8px;
+    background-color: red;
+}
+
+.sidebar{
+    grid-row: 2/-1;
+    min-height: 100vh;
+    background-color: teal;
+    padding: 8px;
+}
+
+.board{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    min-height: 100vh;
+}
+
+.item{
+    background-color: green;
+    min-width: 5vw;
+    min-height: 5vh;
+    padding: 8px;
+    margin: 8px;
+}
